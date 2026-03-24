@@ -64,7 +64,7 @@ export default class ColumnChart {
 
 	update(data: number[]) {
 		const chartElements = this.dataHandler(data);
-		const chartContainer = document.querySelector(this.elementContainer);
+		const chartContainer = this.element.querySelector(this.elementContainer);
 
 		if (!chartContainer) {
 			throw new Error("The chart is missing");
